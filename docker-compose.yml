@@ -15,7 +15,7 @@ services:
 networks:
     default:
         external:
-            name: devstack_default
+            name: navoica-devstack_default
 
 volumes:
   container_only_node_modules:

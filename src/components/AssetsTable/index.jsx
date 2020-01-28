@@ -189,13 +189,13 @@ export default class AssetsTable extends React.Component {
             [styles['studio-copy-button']],
           )
         }
-        {
-          webUrl && this.getCopyUrlButton(
-            assetDisplayName,
-            webUrl,
-            messages.assetsTableWebLink,
-          )
-        }
+        {/*{*/}
+        {/*  webUrl && this.getCopyUrlButton(*/}
+        {/*    assetDisplayName,*/}
+        {/*    webUrl,*/}
+        {/*    messages.assetsTableWebLink,*/}
+        {/*  )*/}
+        {/*}*/}
       </span>
     );
   }

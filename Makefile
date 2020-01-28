@@ -82,4 +82,4 @@ package-lock.validate:
 	git diff --name-only --exit-code package-lock.json
 
 copy-dist:
-	for f in dist/*; do docker cp $$f edx.devstack.studio:/edx/app/edxapp/edx-platform/node_modules/@edx/studio-frontend/dist/; done
+	for f in dist/*; do docker cp $$f navoica.devstack.studio:/edx/app/edxapp/navoica-platform/node_modules/@edx/studio-frontend/dist/; done
