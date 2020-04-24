@@ -123,8 +123,10 @@
   "editImageModalPreviousPageButton": "Cofnij",
   "editImageModalInvalidFileType": "Pliki muszą być obrazami w formacie .jpg, .png lub .tiff. Nie przesłano żadnych plików.",
   "editImageModalTooManyFiles": "Jednocześnie można przesłać tylko jeden plik. Nie przesłano żadnych plików.",
+  "editImageModalPreviouslyUploadImage": "Wybierz wcześniej przesłane zdjęcie",
   "paginationAriaLabel": "Paginacja treści",
   "paginationButtonDisabled": "przycisk jest nieaktywny",
   "paginationNext": "następny",
   "paginationPrevious": "poprzedni"
 }
+

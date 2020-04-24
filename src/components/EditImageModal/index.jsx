@@ -46,6 +46,7 @@ const initialEditImageModalState = {
   currentUploadErrorMessage: null,
   currentValidationMessages: {},
   displayLoadingSpinner: false,
+  editorType: '',
   imageDescription: '',
   imageDimensions: {},
   isImageDecorative: false,
@@ -273,18 +274,33 @@ export default class EditImageModal extends React.Component {
     });
 
     if (isValidFormContent) {
-      this.imageFormRef.dispatchEvent(new CustomEvent('submitForm',
-        {
-          bubbles: true,
-          detail: {
-            height: this.getDimensionStateOrNatural('height'),
-            width: this.getDimensionStateOrNatural('width'),
-            src: this.state.imageSource,
-            alt: this.state.isImageDecorative ? '' : this.state.imageDescription,
-            style: this.state.imageStyle,
+      if (this.state.editorType === 'markdown') {
+        this.imageFormRef.dispatchEvent(new CustomEvent('submitFormMarkDown',
+          {
+            bubbles: true,
+            detail: {
+              height: this.getDimensionStateOrNatural('height'),
+              width: this.getDimensionStateOrNatural('width'),
+              src: this.state.imageSource,
+              alt: this.state.isImageDecorative ? '' : this.state.imageDescription,
+              style: this.state.imageStyle,
+            },
           },
-        },
-      ));
+        ));
+      } else {
+        this.imageFormRef.dispatchEvent(new CustomEvent('submitForm',
+          {
+            bubbles: true,
+            detail: {
+              height: this.getDimensionStateOrNatural('height'),
+              width: this.getDimensionStateOrNatural('width'),
+              src: this.state.imageSource,
+              alt: this.state.isImageDecorative ? '' : this.state.imageDescription,
+              style: this.state.imageStyle,
+            },
+          },
+        ));
+      }
 
       this.setState({
         isModalOpen: false,
@@ -674,7 +690,7 @@ export default class EditImageModal extends React.Component {
       </div>
       <div className="row no-gutters">
         <div className="col">
-          <h3>Select a previously uploaded image</h3>
+          <WrappedMessage message={messages.editImageModalPreviouslyUploadImage}tagName="h3" />
         </div>
       </div>
       <div className="row">
@@ -804,6 +820,7 @@ export default class EditImageModal extends React.Component {
       ...initialEditImageModalState,
       assetsPageType: getPageType(props, state.assetsPageType),
       baseAssetURL: event.detail.baseAssetUrl || '',
+      editorType: event.editor || '',
       imageDescription: event.detail.alt || '',
       imageDimensions: (event.detail.width && event.detail.height) ? {
         width: event.detail.width,

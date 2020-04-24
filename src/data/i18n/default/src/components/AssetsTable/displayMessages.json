@@ -1,0 +1,117 @@
+[
+  {
+    "id": "assetsTablePreviewLabel",
+    "description": "Label for column header",
+    "defaultMessage": "Image Preview"
+  },
+  {
+    "id": "assetsTableNameLabel",
+    "description": "Label for column header",
+    "defaultMessage": "Name"
+  },
+  {
+    "id": "assetsTableTypeLable",
+    "description": "Label for column header",
+    "defaultMessage": "Type"
+  },
+  {
+    "id": "assetsTableDateLabel",
+    "description": "Label for column header",
+    "defaultMessage": "Date Added"
+  },
+  {
+    "id": "assetsTableCaption",
+    "description": "Table specific caption for a high level description",
+    "defaultMessage": "Assets Table"
+  },
+  {
+    "id": "assetsTableCopyLabel",
+    "description": "Label for column header",
+    "defaultMessage": "Copy URLs"
+  },
+  {
+    "id": "assetsTableDeleteLabel",
+    "description": "Label for column header",
+    "defaultMessage": "Delete Asset"
+  },
+  {
+    "id": "assetsTableLockLabel",
+    "description": "Label for column header",
+    "defaultMessage": "Lock Asset"
+  },
+  {
+    "id": "assetsTableNoDescription",
+    "description": "Label shown when no description is available",
+    "defaultMessage": "Description not available"
+  },
+  {
+    "id": "assetsTableNoPreview",
+    "description": "Label shown when no preview is available",
+    "defaultMessage": "Preview not available"
+  },
+  {
+    "id": "assetsTableLockedObject",
+    "description": "States that an object has just been locked",
+    "defaultMessage": "Locked {object}"
+  },
+  {
+    "id": "assetsTableUnlockedObject",
+    "description": "States that an object has just been unlocked",
+    "defaultMessage": "Unlocked {object}"
+  },
+  {
+    "id": "assetsTableUpdateLock",
+    "description": "States that the lock status of an item is updating",
+    "defaultMessage": "Updating lock status for {assetName}."
+  },
+  {
+    "id": "assetsTableStudioLink",
+    "description": "Label that indicates a relative (as opposed to an absolute) URL",
+    "defaultMessage": "Studio"
+  },
+  {
+    "id": "assetsTableWebLink",
+    "description": "Label that indicates an absolute (as opposed to a relative) URL",
+    "defaultMessage": "Web"
+  },
+  {
+    "id": "assetsTableCopiedStatus",
+    "description": "States that a URL was copied",
+    "defaultMessage": "Copied"
+  },
+  {
+    "id": "assetsTableDetailedCopyLink",
+    "description": "Labels a button that is used to copy the studio/web URL for a given item",
+    "defaultMessage": "{displayName} copy {label} URL"
+  },
+  {
+    "id": "assetsTableDeleteObject",
+    "description": "Labels the button used to delete a given item",
+    "defaultMessage": "Delete {displayName}"
+  },
+  {
+    "id": "assetsTableCancel",
+    "description": "Labels the \"Cancel\" button in a modal",
+    "defaultMessage": "Cancel"
+  },
+  {
+    "id": "assetsTablePermaDelete",
+    "description": "Indicates a non-recoverable, permanent delete",
+    "defaultMessage": "Permanently delete"
+  },
+  {
+    "id": "assetsTableLearnMore",
+    "description": "Label for a documentation link",
+    "defaultMessage": "Learn more."
+  },
+  {
+    "id": "assetsTableDeleteWarning",
+    "description": "Warning that indicates the delete operation is permanent",
+    "defaultMessage": "Deleting {displayName} cannot be undone."
+  },
+  {
+    "id": "assetsTableDeleteConsequences",
+    "description": "Warns of the consequences of deleting an item",
+    "defaultMessage": "Any links or references to this file will no longer work. {link}"
+  }
+]

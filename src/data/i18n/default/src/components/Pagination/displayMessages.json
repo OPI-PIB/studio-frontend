@@ -1,0 +1,22 @@
+[
+  {
+    "id": "paginationAriaLabel",
+    "description": "Screen-reader text to label the nav region as pagination",
+    "defaultMessage": "Content pagination"
+  },
+  {
+    "id": "paginationButtonDisabled",
+    "description": "Screen-reader text that indicates that the button is disabled",
+    "defaultMessage": "button is disabled"
+  },
+  {
+    "id": "paginationNext",
+    "description": "Label for next button",
+    "defaultMessage": "next"
+  },
+  {
+    "id": "paginationPrevious",
+    "description": "Label for previous button",
+    "defaultMessage": "previous"
+  }
+]

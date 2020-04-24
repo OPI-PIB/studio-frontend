@@ -1,0 +1,17 @@
+[
+  {
+    "id": "assetsPageNoResultsMessage",
+    "description": "Message displayed in table when no results are found.",
+    "defaultMessage": "0 files found"
+  },
+  {
+    "id": "assetsPageNoAssetsMessage",
+    "description": "Message displayed when a course has no files to display in the table.",
+    "defaultMessage": "0 files uploaded"
+  },
+  {
+    "id": "assetsPageSkipLink",
+    "description": "Link text for a link that will skip user focus over table filters to table contents.",
+    "defaultMessage": "Skip to table contents"
+  }
+]

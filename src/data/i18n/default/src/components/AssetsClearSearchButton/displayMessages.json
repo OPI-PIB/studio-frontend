@@ -1,0 +1,7 @@
+[
+  {
+    "id": "assetsClearSearchButtonLabel",
+    "description": "Label for a button that clears the search applied to a table.",
+    "defaultMessage": "Clear search"
+  }
+]

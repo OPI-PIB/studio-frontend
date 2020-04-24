@@ -161,6 +161,11 @@ const messages = defineMessages({
     defaultMessage: 'Only one file may be uploaded at a time. No files were uploaded.',
     description: 'Error message shown when too many files are selected for upload',
   },
+  editImageModalPreviouslyUploadImage: {
+    id: 'editImageModalPreviouslyUploadImage',
+    defaultMessage: 'Select a previously uploaded image',
+    description: 'Previously upload image header',
+  },
 });
 
 export default messages;

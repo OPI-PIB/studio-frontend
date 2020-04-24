@@ -1,0 +1,17 @@
+[
+  {
+    "id": "assetsListNoPreview",
+    "description": "Label shown when no preview is available",
+    "defaultMessage": "Preview not available"
+  },
+  {
+    "id": "assetsListNameLabel",
+    "description": "Label for column header",
+    "defaultMessage": "Name"
+  },
+  {
+    "id": "assetsListDateLabel",
+    "description": "Label for column header",
+    "defaultMessage": "Date Added"
+  }
+]
