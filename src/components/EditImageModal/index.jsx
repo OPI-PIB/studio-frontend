@@ -690,7 +690,7 @@ export default class EditImageModal extends React.Component {
       </div>
       <div className="row no-gutters">
         <div className="col">
-          <WrappedMessage message={messages.editImageModalPreviouslyUploadImage}tagName="h3" />
+          <WrappedMessage message={messages.editImageModalPreviouslyUploadImage} tagName="h3" />
         </div>
       </div>
       <div className="row">
@@ -820,7 +820,7 @@ export default class EditImageModal extends React.Component {
       ...initialEditImageModalState,
       assetsPageType: getPageType(props, state.assetsPageType),
       baseAssetURL: event.detail.baseAssetUrl || '',
-      editorType: event.editor || '',
+      editorType: event.detail.editor || '',
       imageDescription: event.detail.alt || '',
       imageDimensions: (event.detail.width && event.detail.height) ? {
         width: event.detail.width,
