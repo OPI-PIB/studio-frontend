@@ -21,7 +21,7 @@
   border-radius: 2px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   background-color: white;
-  border: 1px solid #b2b2b2;
+  //border: 1px solid #b2b2b2;
   table-layout: fixed;
 }
 
@@ -43,6 +43,7 @@
 }
 
 .table thead th {
+  border-bottom: none;
   button {
     padding: 0;
   }
@@ -51,5 +52,26 @@
 // This gives the "Copy URLs" column header enough space so that it doesn't wrap and make the whole
 // header row too wide vertically.
 .table thead th:nth-child(5) {
-  min-width: $spacer * 12;
+  min-width: $spacer * 7.5;
+}
+.table thead th:nth-child(4) {
+  min-width: $spacer * 7.5;
+}
+
+thead {
+  tr {
+    background-color: $table-header-gray;
+  }
+}
+
+tbody {
+  tr:nth-child(odd) {
+    background-color: $table-grey;
+  }
+}
+
+.table{
+  td, th {
+    border-top: none;
+  }
 }
