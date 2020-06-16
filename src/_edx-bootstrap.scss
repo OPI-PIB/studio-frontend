@@ -3,6 +3,16 @@
  * individual component's SCSS file. */
 
 $base-rem-size: 0.625;
+
+
+$red: #E41D37 !default;
+$light-red: #F8ECEB !default;
+$border-red: #F0D9D7 !default;
+$table-header-gray: #F2F2F2 !default;
+$table-grey: #F9F9F8 !default;
+
+$primary: $red !default;
+
 @import '~@edx/edx-bootstrap/sass/edx/theme';
 @import '~bootstrap/scss/variables';
 @import '~bootstrap/scss/mixins';

@@ -5,7 +5,8 @@
 }
 
 .drop-zone-compact {
-  border: $dark dashed 1px;
+  border: #ccc dashed 2px;
+  background: #fff;
   padding: 0;
 
   button {
@@ -30,11 +31,19 @@
 .drop-zone {
   @extend .drop-zone-compact;
 
+  cursor: pointer;
+
   @media (min-width: map-get($grid-breakpoints, 'md')) {
     padding: $spacer;
     h2 {
       margin-bottom: inherit;
     }
+  }
+
+  &:hover {
+  background: $light-red;
+  border-style: solid;
+  border-color: $border-red;
   }
 }
 
