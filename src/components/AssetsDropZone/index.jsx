@@ -14,6 +14,7 @@ export default class AssetsDropZone extends React.Component {
     super();
     this.dropZoneRef = {};
     this.dropZoneMaxFileSizeBytes = props.maxFileSizeMB * 1000000;
+    this.dropZoneMaxFileSizeMB = props.maxFileSizeMB;
   }
 
   onDrop = (acceptedFiles, rejectedFiles) => {
@@ -23,7 +24,7 @@ export default class AssetsDropZone extends React.Component {
       // bubbling up error from the first rejected file in the list
       const rejectedFile = rejectedFiles[0];
       if (rejectedFile.size > this.dropZoneMaxFileSizeBytes) {
-        this.props.uploadExceedMaxSize(this.dropZoneMaxFileSizeBytes);
+        this.props.uploadExceedMaxSize(this.dropZoneMaxFileSizeMB);
       } else {
         this.props.uploadInvalidFileType();
       }
