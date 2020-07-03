@@ -1,6 +1,6 @@
 {
   "name": "@opipib/studio-frontend",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "The frontend for the Open edX platform",
   "repository": "OPI-PIB/studio-frontend",
   "scripts": {
