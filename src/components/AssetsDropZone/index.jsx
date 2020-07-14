@@ -60,7 +60,7 @@ export default class AssetsDropZone extends React.Component {
                 ])}
                 data-identifier="asset-drop-zone"
                 disableClick
-                maxSize={this.dropZoneMaxFileSizeBytes}
+                maxSize={this.dropZoneMaxFileSizeMB}
                 onDrop={this.onDrop}
                 ref={this.setDropZoneRef}
               >
